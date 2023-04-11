@@ -20,14 +20,18 @@ const testConnection = async () =>{
     }
 }
 const query = async (sql, params)=>{
+    const conn = null
     try{
         const conn = await pool.getConnection()
         const res = await conn.query(sql, params)
-        conn.release()
         return res[0]
     }catch(e){
         throw e
     }finally{
+        if (conn!==null){
+            conn.release()
+        }
+
     }
 }
 const getTransactionConn = async ()=>{

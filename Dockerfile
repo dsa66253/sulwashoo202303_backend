@@ -2,7 +2,7 @@ FROM node:18.14.2-alpine
 
 # Create app directory
 # WORKDIR /home/ubuntu/aoli/laneige-backend/
-WORKDIR /home/ubuntu/aoli/laneige-backend/
+WORKDIR /home/ubuntu/aoli/laneige202303_backend/
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)

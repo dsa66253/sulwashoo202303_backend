@@ -2,9 +2,9 @@ import cors from "cors"
 import express from "express";
 import * as dotenv from 'dotenv'
 // import devRouter from "./routers/dev.route.js"
-import drawRouter from "./routes/draw.js"
-import { runDailyRoute } from "./scheduler/refreshGiftNumber.js";
-import { getTransactionConn } from "./db/db.js"
+import drawRouter from "./routes/draw.route.js"
+import { runDailyRoute } from "./scheduler/recordTraffic.js";
+import { getTransactionConn, testConnection } from "./db/db.js"
 import {playDraw} from "./utility/draw.js"
 dotenv.config()
 const app = express();
@@ -17,14 +17,7 @@ app.use(cors({
 
 
 app.use("/draw", drawRouter)
-// app.use("/dev", devRouter)
-// const test = async ()=>{
-//     for(let i=0; i<2; i++){
-//         const awardNum = await playDraw("09876543")
-//         console.log(i, awardNum)
-//     }
-// }
-// test()
+
 //? roll back need to begin transaction again?
 const test = async (i)=>{
     const transactionConn = await getTransactionConn()
@@ -52,12 +45,9 @@ const test = async (i)=>{
     transactionConn.release()
 }
 
-// for (let i=0;i<2;i++){
-//     test(i)
-// }
-const testPlay=async(i)=>{
+const staticPlay=async(i)=>{
     let sum = {}
-    const playTime = 1
+    const playTime = 10000
     for(let i=0; i<playTime; i++){
         let award = await playDraw()
         if (sum[award]===undefined){
@@ -66,16 +56,16 @@ const testPlay=async(i)=>{
             sum[award]++
         }
     }
-    console.log("sum", i, sum)
+    console.log("sum", sum)
 }
-// testPlay()
+// staticPlay()
 
-// runDailyRoute()
+runDailyRoute()
 
-let PORT = parseInt(process.env.PORT)
+const PORT = parseInt(process.env.PORT)
 // userControoller.postUser()
 app.use("/", (req, res)=>{res.send("helo")})
 const server = app.listen(PORT, ()=>{
-    // testConnection()
+    testConnection()
     console.log("server is luanched at ", server.address().port)
 })
