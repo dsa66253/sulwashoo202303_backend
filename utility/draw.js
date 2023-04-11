@@ -11,12 +11,19 @@ const getAwardBucket = ()=>{
             
         }
     }
+    
     //info normalized award ratio
+    const minString = min.toString()
+    const decimalPart = minString.split(".")[1]
+    let multiplier = 1
+    for (let char in decimalPart){
+        multiplier = multiplier * 10
+    }
     let awardNorRatio = {}
     for(let k in awardRatio){
-        awardNorRatio[k] = parseInt(awardRatio[k]/min)
+        awardNorRatio[k] = parseInt(awardRatio[k]*multiplier)
     }
-    // console.log(awardNorRatio)
+    console.log(awardNorRatio)
     //info create bucket
     let awardBucket = {}
     let minBucketNum = 1
@@ -35,7 +42,7 @@ const getAwardBucket = ()=>{
     return {awardBucket, minBucketNum, maxBucketNum}
 }
 let {awardBucket, minBucketNum, maxBucketNum} = getAwardBucket()
-
+console.log(awardBucket, minBucketNum, maxBucketNum)
 const playDraw = async (transactionConn)=>{
     // return string type of gift number
     // play draw by transaction connection
