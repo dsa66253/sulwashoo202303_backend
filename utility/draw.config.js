@@ -13,19 +13,19 @@ const awardRatio = {
     "11":0.05
 }
 const giftFileNames = {
-    "1":"gift_Mfeq_Afdf_R1n4_Y12f_1aOl.png",
-    "2":"gift_Mfeq_Afdf_R1n4_Y12f_2aOl.png",
-    "3":"gift_Mfeq_Afdf_R1n4_Y12f_3aOl.png",
-    "4":"gift_Mfeq_Afdf_R1n4_Y12f_4aOl.png",
-    "5":"gift_Mfeq_Afdf_R1n4_Y12f_5aOl.png",
-    "6":"gift_Mfeq_Afdf_R1n4_Y12f_6aOl.png",
-    "7":"gift_Mfeq_Afdf_R1n4_Y12f_7aOl.png",
-    "8":"gift_Mfeq_Afdf_R1n4_Y12f_8aOl.png",
-    "9":"gift_Mfeq_Afdf_R1n4_Y12f_9aOl.png",
-    "10":"gift_Mfeq_Afdf_R1n4_Y12f_10aOl.png",
-    "11":"gift_Mfeq_Afdf_R1n4_Y12f_11aOl.png",
-    // "12":"gift_Mfeq_Afdf_R1n4_Y12f_12aOl.png",
-    // "13":"gift_Mfeq_Afdf_R1n4_Y12f_13aOl.png",
+    '1': 'eac2f01cbe3d536c806f44a435b28de6.png',
+    '2': '2d21a843a3ce083cd4aca7c9daa899cb.png',
+    '3': 'bcea8340484edc97e19f1fa94490b85c.png',
+    '4': '151242a8fe9ccf5d0793f25c19a5d17f.png',
+    '5': '390a0d51cc8cef31a39009b85f93eb59.png',
+    '6': '09bad4b144685db3831fc794fd1d6170.png',
+    '7': '879bfb3510abd8517083b6e7b2233e01.png',
+    '8': '98d7dd3694498d75a132e11e10fcf927.png',
+    '9': 'dfa9e5607c6fd26019cb78736f15511e.png',
+    '10': 'e4671bf91ddccab00f0b5a9b2e140f8f.png',
+    '11': '639dd765d6bf33b3ffdcdc272c1d6913.png',
+    '12': '1298ae7f13e94dbf047a78ef183c3318.png',
+    '13': '8206ef9a4943678ae747514e9f25cae8.png'
 }
 const giftSerials= {
     "1":"MDGIFT111",
@@ -54,3 +54,4 @@ const giftUrl= {
     "9":"https://buy.line.me/angpau?sn=Dec446LANEIGE",
 }
 export {awardRatio, giftFileNames, giftSerials, giftUrl}
+
