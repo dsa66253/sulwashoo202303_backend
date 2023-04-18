@@ -6,7 +6,7 @@ let cumulatedTraffic = 0
 const runDailyRoute = () =>{
     // const runTime = '0 0 0 * * *'
     console.log("daily schedule launch")
-    const runTime = '59 59 23 * * *' //'0 0 0 * * *' for production
+    const runTime = '59 59 * * * *' //'0 0 0 * * *' for production
     // const targetGift = "7"
     let job = new CronJob(
         runTime,
