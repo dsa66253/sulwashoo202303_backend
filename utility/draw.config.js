@@ -1,16 +1,16 @@
 // write probability of each price here
 const awardRatio = {
-    "1":0.15,
-    "2":0.15,
-    "3":0.15,
-    "4":0.10,
+    "1":0.10,
+    "2":0.08,
+    "3":0.08,
+    "4":0.09,
     "5":0.10,
-    "6":0.15,
+    "6":0.10,
     "7":0.10,
-    "8":0.10,
-    // "9":0.06,
-    // "10":0.10,
-    // "11":0.05
+    "8":0.15,
+    "9":0.10,
+    "10":0.05,
+    "11":0.05
 }
 const giftFileNames = {
     '1': 'eac2f01cbe3d536c806f44a435b28de6.png',
@@ -24,21 +24,21 @@ const giftFileNames = {
     '9': 'dfa9e5607c6fd26019cb78736f15511e.png',
     '10': 'e4671bf91ddccab00f0b5a9b2e140f8f.png',
     '11': '639dd765d6bf33b3ffdcdc272c1d6913.png',
-    '12': '1298ae7f13e94dbf047a78ef183c3318.png',
-    '13': '8206ef9a4943678ae747514e9f25cae8.png'
+    // '12': '1298ae7f13e94dbf047a78ef183c3318.png',
+    // '13': '8206ef9a4943678ae747514e9f25cae8.png'
 }
 const giftSerials= {
-    "1":"MDGIFT111",
-    "2":"MDGIFT816",
-    "3":"MDGIFT270",
-    "4":"MDGIFT247",
-    "5":"MDGIFT621",
-    "6":"111174057",
-    "7":"MDGIFT897",
-    "8":"936010159",
-    // "9":"111248040",
-    // "10":"936010159",
-    // "11":"MDGIFT220",
+    "1":"MOM019",
+    "2":"MOM755",
+    "3":"MOM756",
+    "4":"null",
+    "5":"MOM695",
+    "6":"MOM692",
+    "7":"MOM690",
+    "8":"MOM158",
+    "9":"MOM936",
+    "10":"MOM973",
+    "11":"MOM971",
     // "12":"娘娘美顏",
     // "13":"娘娘賜座"
 }
@@ -46,12 +46,12 @@ const giftUrl= {
     "1":"null",
     "2":"null",
     "3":"null",
-    "4":"null",
+    "4":"https://buy.line.me/angpau?sn=Dec446LANEIGE", //! need to be modified
     "5":"null",
     "6":"null",
     "7":"null",
     "8":"null",
-    "9":"https://buy.line.me/angpau?sn=Dec446LANEIGE",
+    "9":"null",
 }
 export {awardRatio, giftFileNames, giftSerials, giftUrl}
 
