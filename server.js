@@ -58,7 +58,7 @@ const staticPlay=async(i)=>{
     }
     console.log("sum", sum)
 }
-staticPlay()
+// staticPlay()
 
 runDailyRoute()
 

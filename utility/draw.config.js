@@ -13,17 +13,17 @@ const awardRatio = {
     "11":0.05
 }
 const giftFileNames = {
-    '1': 'eac2f01cbe3d536c806f44a435b28de6.png',
-    '2': '2d21a843a3ce083cd4aca7c9daa899cb.png',
-    '3': 'bcea8340484edc97e19f1fa94490b85c.png',
-    '4': '151242a8fe9ccf5d0793f25c19a5d17f.png',
-    '5': '390a0d51cc8cef31a39009b85f93eb59.png',
-    '6': '09bad4b144685db3831fc794fd1d6170.png',
-    '7': '879bfb3510abd8517083b6e7b2233e01.png',
-    '8': '98d7dd3694498d75a132e11e10fcf927.png',
-    '9': 'dfa9e5607c6fd26019cb78736f15511e.png',
-    '10': 'e4671bf91ddccab00f0b5a9b2e140f8f.png',
-    '11': '639dd765d6bf33b3ffdcdc272c1d6913.png',
+    '1': 'eac2f01cbe3d536c806f44a435b28de61.png',
+    '2': '2d21a843a3ce083cd4aca7c9daa899cb1.png',
+    '3': 'bcea8340484edc97e19f1fa94490b85c1.png',
+    '4': '151242a8fe9ccf5d0793f25c19a5d17f1.png',
+    '5': '390a0d51cc8cef31a39009b85f93eb591.png',
+    '6': '09bad4b144685db3831fc794fd1d61701.png',
+    '7': '879bfb3510abd8517083b6e7b2233e011.png',
+    '8': '98d7dd3694498d75a132e11e10fcf9271.png',
+    '9': 'dfa9e5607c6fd26019cb78736f15511e1.png',
+    '10': 'e4671bf91ddccab00f0b5a9b2e140f8f1.png',
+    '11': '639dd765d6bf33b3ffdcdc272c1d69131.png',
     // '12': '1298ae7f13e94dbf047a78ef183c3318.png',
     // '13': '8206ef9a4943678ae747514e9f25cae8.png'
 }
