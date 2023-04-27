@@ -15,6 +15,7 @@ const postDraw = async (req, res) =>{
         giftNumber:"",
         giftSerialNumber:"",
         giftImage:"",
+        giftLink:""
     }
     let transactionConn
     try{
@@ -22,6 +23,7 @@ const postDraw = async (req, res) =>{
         response.giftNumber = await playDraw(transactionConn)
         response.giftSerialNumber = giftSerials[response.giftNumber]
         response.giftImage = giftFileNames[response.giftNumber]
+        response.giftLink = giftUrl[response.giftNumber]
         console.log(moment().utcOffset(8).format(), response)
         res.status(201).send(response)
     }catch(e){
