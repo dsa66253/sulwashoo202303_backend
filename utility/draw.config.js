@@ -46,7 +46,7 @@ const giftUrl= {
     "1":"null",
     "2":"null",
     "3":"null",
-    "4":"https://buy.line.me/angpau?sn=MAY523sulwhaso", //! need to be modified
+    "4":"https://buy.line.me/angpau?sn=MAY523sulwhasoo", //! need to be modified
     "5":"null",
     "6":"null",
     "7":"null",
